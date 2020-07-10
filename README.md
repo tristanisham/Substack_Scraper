@@ -4,6 +4,9 @@
 
 Hey there! My name's Tristan Isham. I'm a writer on substack and if you're looking at this repo, chances you are too. The platform is great but it lacks some essential tools like the ability to export your posts. That's why I built Substack_Scraper. It's a little Ruby program that'll scrape your blog and output your post in a CMS friendly format. 
 
+# Shoutouts
+- Shoutout to my friend [Braxton](https://github.com/3raxton). Guy's a great UI/UX designer and the best beta tester.
+
 ## How to run Substack_Scraper:
 ### Ruby
 #### Requires: **Ruby 2.7**
@@ -11,6 +14,9 @@ You can check your Ruby version by running this in your terminal
 ```ruby -v```
 If you have a Mac, your device has a copy of ruby preinstalled. This version is not up to date, and can cause problems.
 - [How To Install Ruby and Set Up a Local Programming Environment on MacOS](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-macos) (This method involves installing and using Homebrew.
+- [If you use ZSH, this is how you switch to Homebrew's Ruby](https://medium.com/@TristanIsham/how-to-configure-zsh-on-macos-b3e8073bd95a)
+
+
 
 # Work in Progress
 
