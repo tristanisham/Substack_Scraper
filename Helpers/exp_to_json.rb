@@ -6,7 +6,7 @@ def getDirectory
 
     symTitle = gets.chomp.to_str
     
-    $finalArticle = [symTitle => [Title: $postTitle, Subtitle: $postSubTitle]]
+    $finalArticle = [symTitle => [Title: $postTitle, Subtitle: $postSubTitle, Copy: $postCopy]]
 
 
     dirEX = Dir.exists?("Output")

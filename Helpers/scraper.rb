@@ -20,7 +20,11 @@ attr_accessor :parser
     def get_subtitle
         actArticle.css(".subtitle").children.map { |subtitle| subtitle.text }.compact
     end
-    
+
+    def get_copy
+        actArticle.css(".body").css("p").children.map { |copy| copy.text }.compact
+    end
+
     private
     
     def actArticle
@@ -30,46 +34,10 @@ attr_accessor :parser
     scraper = Scraper.new
     $postTitle = scraper.get_title
     $postSubTitle = scraper.get_subtitle
+    $postCopy = scraper.get_copy
     
-    #Need to write output
-    
-
-    # puts "What do you want to call this article?"
-    # entry = gets.chomp.to_sym
-    # title = postTitle
-    # subtitle = postSubTitle
-    # $finalArticle[title] = subtitle
-    # # the_data = JSON.load_file('_data.json')
-
-    # # $finalArticle.each do | entry, title, subtitle| 
-    # #     puts "#{entry} #{title}: #{subtitle}" 
-    # # end
-    
-    
-    # # [ 
-    # #    "Entry" 
-    # #         [
-    # #             postTitle, 
-    # #         ],
-    # #     "Title"
-    # #         [
-    # #             postTitle,
-    # #         ],
-    # #     "Subtitle"
-    # #         [
-    # #             postSubTitle,
-    # #         ],
-    # #     ], 
-    # # ]
-
-    
-
-    
-
-    
-        
-    
-            
+    # Need to write output
+        # Now handled by exp_to_json.rb        
     
 end
 
