@@ -7,6 +7,9 @@ require 'nokogiri'
 require 'fileutils'
 require 'json'
 #files
-require './scraper'
+#The actual scraper
+require './Helpers/scraper'
+#What pushed the scraper to json
+require './Helpers/exp_to_json'
 # Start of program
 

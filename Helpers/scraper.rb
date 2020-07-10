@@ -28,14 +28,11 @@ attr_accessor :parser
     end
     
     scraper = Scraper.new
-    postTitle = scraper.get_title
-    postSubTitle = scraper.get_subtitle
+    $postTitle = scraper.get_title
+    $postSubTitle = scraper.get_subtitle
     
     #Need to write output
-    puts "What do you want to call this scrape?"
-    symTitle = gets.chomp.to_str
     
-    $finalArticle = [symTitle => [Title: postTitle, Subtitle: postSubTitle]]
 
     # puts "What do you want to call this article?"
     # entry = gets.chomp.to_sym
@@ -68,8 +65,7 @@ attr_accessor :parser
     
 
     
- 
-    
+
     
         
     
@@ -77,37 +73,3 @@ attr_accessor :parser
     
 end
 
-def getDirectory
-
-    dirEX = Dir.exists?("Output")
-
-    case dirEX
-    when dirEx = false
-        FileUtils.mkdir_p('Output')
-        FileUtils.cd('Output') {
-            File.write("_data.json", $finalArticle.to_json)
-            puts '1st sitch'
-        }
-        
-    when dirEx = true
-        FileUtils.cd('Output') {
-            File.write("_data.json", $finalArticle.to_json)
-            puts '2nd sitch'
-        }
-    else
-        puts "error in write stage"
-    end
-    
-    # if dirEx = false
-    #     FileUtils.mkdir_p './Output'
-        
-    # else
-    #     Dir.chdir("Output") do
-    #         File.write("_article.yaml", $finalArticle.to_j)
-    #     end
-
-    # end
-
-end
-
-getDirectory()
