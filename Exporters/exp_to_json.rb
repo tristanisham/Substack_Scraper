@@ -1,4 +1,4 @@
-require './Helpers/scraper'
+require './Ops/scraper'
 
 puts "What do you want to call this scrape?"
    

@@ -9,8 +9,8 @@ require 'fileutils'
 require 'json'
 #files
 #The actual scraper
-require './Helpers/scraper'
+require './Ops/scraper'
 #What pushed the scraper to json
-require './Helpers/exp_to_json'
+require './Exporters/exp_to_json'
 # Start of program
 
