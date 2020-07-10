@@ -1,4 +1,4 @@
-puts "Hi! Welcome to Substack Scraper v: 1.0."
+puts "Hi! Welcome to Substack Scraper v: 0.0.2"
 puts "What Substack post url are you trying to scrape?"
 
 $subURL = gets.chomp.to_str
