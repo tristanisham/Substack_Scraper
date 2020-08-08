@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.7.1'
+ruby '2.7'
 
 gem 'nokogiri', '~> 1.10', '>= 1.10.10'
 gem 'httparty', '~> 0.17.0'
